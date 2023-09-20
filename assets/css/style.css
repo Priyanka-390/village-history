@@ -9,6 +9,7 @@
 }
 
 @import url("./style2.css");
+
 :root {
     /* font-size */
     --fs-sm: 16px;
@@ -183,6 +184,127 @@ a:hover {
 
 .ul {
     margin-left: 0;
+}
+
+.heading-text {
+    color: var(--Black-500, #000);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-xl);
+    font-style: normal;
+    font-weight: var(--fw-600);
+}
+
+.common-txt {
+    color: var(--Black-500, #000);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-sm);
+    font-style: normal;
+    font-weight: var(--fw-600);
+    line-height: 180%;
+}
+
+.common-phar {
+    color: var(--Black-500, #000);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-sm);
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 180%;
+    opacity: 0.7;
+}
+
+.max-width-310 {
+    max-width: 310px;
+}
+
+.men-name {
+    color: #000;
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-xxl);
+    font-style: normal;
+    font-weight: var(--fw-600);
+    line-height: 180%;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
+}
+
+.pt-12 {
+    padding-top: 12px;
+}
+
+.pt-39 {
+    padding-top: 39px;
+}
+
+.pb-62 {
+    padding-bottom: 62px;
+}
+
+.py-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.foot-text {
+    color: #FFF;
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-sm);
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 180%;
+    max-width: 375px;
+}
+
+.foot-link {
+    color: #FFF;
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-2xl);
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 180%;
+}
+
+.line {
+    width: 100%;
+    border: 1px solid white;
+    opacity: 0.7;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-family: slick;
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: #c2190e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width:500px) {
+
+    .slick-next:before,
+    .slick-prev:before {
+        content: unset;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -25px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+
+    }
 }
 
 @media (max-width:576px) {
