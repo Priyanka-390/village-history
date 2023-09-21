@@ -31,27 +31,38 @@ p {
     margin-bottom: 0;
 }
 
+/* padding,margin */
 .mb-120 {
     margin-bottom: 120px;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
+}
+
+.pt-12 {
+    padding-top: 12px;
+}
+
+.pt-39 {
+    padding-top: 39px;
+}
+
+.pb-62 {
+    padding-bottom: 62px;
 }
 
 .pb-24 {
     padding-bottom: 24px;
 }
 
-.py-235 {
-    padding-top: 235px;
-    padding-bottom: 235px;
+.min-vh-80 {
+    min-height: 80vh;
 }
 
 .py-38 {
     padding-top: 38px;
     padding-bottom: 38px;
-}
-
-.py-230 {
-    padding-top: 230px;
-    padding-bottom: 230px;
 }
 
 .py-120 {
@@ -84,11 +95,16 @@ p {
     line-height: normal;
 }
 
+.nav:hover {
+    -webkit-text-stroke: 1px;
+    color: #C2190E;
+}
+
 .main-btn {
     border-radius: 17.5px;
     background: #C2190E;
     padding: 6px 22px;
-    border: transparent;
+    border: 1px solid transparent;
 }
 
 .nav-btn {
@@ -102,8 +118,9 @@ p {
 }
 
 .nav-btn:hover {
-    background: white;
     color: #C2190E;
+    background-color: #FFFFFF;
+    border: 1px solid #C2190E;
 }
 
 .bg-img1 {
@@ -176,6 +193,7 @@ p {
 
 .read:hover svg path {
     fill: blue;
+    transition: all 300ms linear;
 }
 
 a:hover {
@@ -224,27 +242,6 @@ a:hover {
     font-style: normal;
     font-weight: var(--fw-600);
     line-height: 180%;
-}
-
-.pb-32 {
-    padding-bottom: 32px;
-}
-
-.pt-12 {
-    padding-top: 12px;
-}
-
-.pt-39 {
-    padding-top: 39px;
-}
-
-.pb-62 {
-    padding-bottom: 62px;
-}
-
-.py-120 {
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .gap-10 {
@@ -308,59 +305,57 @@ a:hover {
 
     :root {
         --fs-lg: 40px;
-
-
     }
 }
 
-    @media (max-width:576px) {
-        .w-20 {
-            width: 20%;
-        }
+@media (max-width:576px) {
+    .w-20 {
+        width: 20%;
+    }
+}
+
+@media (min-width:767px) {
+    .py-md-230 {
+        padding-top: 230px;
+        padding-bottom: 230px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mobile_view {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        min-height: 100vh;
+        background-color: lightcyan;
+        transition: 300ms linear;
+        flex-direction: column;
     }
 
-    @media (min-width:767px) {
-        .py-md-230 {
-            padding-top: 230px;
-            padding-bottom: 230px;
-        }
+    .overflow_hidden {
+        overflow: hidden;
     }
 
-    @media (max-width: 1200px) {
-        .mobile_view {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 100%;
-            min-height: 100vh;
-            background-color: lightcyan;
-            transition: 300ms linear;
-            flex-direction: column;
-        }
-
-        .overflow_hidden {
-            overflow: hidden;
-        }
-
-        .line1,
-        .line2,
-        .line3 {
-            width: 30px;
-            min-height: 3px;
-            background-color: #C2190E;
-            transition: 300ms linear;
-        }
-
-        .cross .line1 {
-            transform: rotate(50deg) translate(17px, 14px);
-        }
-
-        .cross .line2 {
-            transform: translateX(-50%);
-            opacity: 0;
-        }
-
-        .cross .line3 {
-            transform: rotate(-50deg) translateY(-50%);
-        }
+    .line1,
+    .line2,
+    .line3 {
+        width: 30px;
+        min-height: 3px;
+        background-color: #C2190E;
+        transition: 300ms linear;
     }
+
+    .cross .line1 {
+        transform: rotate(50deg) translate(17px, 14px);
+    }
+
+    .cross .line2 {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    .cross .line3 {
+        transform: rotate(-50deg) translateY(-50%);
+    }
+}
